@@ -353,7 +353,6 @@ nav a.active {
 .projects-container {
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: column;
 	justify-content: space-around;
 	gap: 20px;
 	padding: 20px;
