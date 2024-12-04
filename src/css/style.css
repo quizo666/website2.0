@@ -1,0 +1,405 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px; /* Базовый размер шрифта */
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	height: 100%;
+	line-height: 1.6;
+}
+
+label {
+	color: white;
+}
+
+.background-section {
+	min-height: 100vh;
+	width: 100%;
+	background-image: url('../img/Batman_final_background.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	padding-top: 3rem;
+}
+
+.black-bg {
+	background-color: #000;
+}
+
+.content {
+	background-color: white;
+	padding: 1.25rem;
+}
+
+.black-content {
+	background-color: black;
+	padding: 1.25rem;
+}
+
+.brand-name {
+	margin-top: 24rem;
+	margin-left: 7.5rem;
+	font-size: 5.625rem;
+	letter-spacing: 0.625rem;
+	color: white;
+}
+
+.question-text {
+	margin-right: 7.5rem;
+	font-size: 4rem;
+	color: white;
+	font-weight: bold;
+	text-align: right;
+}
+
+.main-text {
+	font-size: 1.75rem;
+	font-weight: bold;
+}
+
+.white-text {
+	color: white;
+}
+
+.name-work-text {
+	font-size: 2rem;
+	font-weight: bold;
+	margin-bottom: 0.9375rem;
+}
+
+.main-text-white {
+	font-size: 1.75rem;
+	font-weight: bold;
+	color: white;
+}
+
+.description-text {
+	margin-left: 7.5rem;
+	font-size: 1.875rem;
+	color: white;
+	font-weight: bold;
+}
+
+.extra-bold-text {
+	font-size: 6rem;
+	text-align: center;
+}
+
+.h2-text {
+	font-size: 2.5rem;
+}
+
+.h2-text-white {
+	font-size: 2.5rem;
+	color: white;
+	margin-left: 3.125rem;
+}
+
+.extra-bold-text-white {
+	font-size: 6rem;
+	text-align: center;
+	color: white;
+}
+
+.black-text {
+	color: black;
+}
+
+.black-text-right {
+	color: black;
+	display: block;
+	text-align: center;
+}
+
+.image-links {
+	display: flex;
+	justify-content: center;
+	gap: 1.25rem;
+	margin-top: 26.875rem;
+}
+
+.image-links img {
+	width: 3.125rem;
+	height: 3.125rem;
+}
+
+.copyright-sign {
+	color: white;
+	text-align: right;
+	margin-right: 1.25rem;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	margin-left: 7.5rem;
+	padding: 1.25rem;
+}
+
+.container img {
+	margin-right: 5.625rem;
+	margin-bottom: 3.125rem;
+	margin-top: 3.125rem;
+}
+
+.text-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.center-align {
+	text-align: center;
+}
+
+.right-align {
+	display: block;
+	text-align: center;
+}
+
+.description {
+	font-size: 1rem;
+}
+
+main {
+	width: 100%;
+}
+
+.inline-li {
+	display: inline;
+	margin-right: 6.25rem;
+}
+
+li:last-child {
+	margin-right: 0;
+}
+
+nav ul li a {
+	font-size: 1.25rem;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a {
+	color: white;
+}
+
+a:hover {
+	color: #b7c4c7;
+}
+
+a:active {
+	color: red;
+}
+
+.nav-link {
+	color: white;
+}
+
+.nav-link.active {
+	color: red;
+}
+
+.custom-table {
+	width: 100%;
+	border-collapse: collapse;
+	background-image: url('../img/table_background.png');
+	background-size: cover;
+}
+
+.custom-table th,
+.custom-table td {
+	padding: 0.9375rem;
+	text-align: left;
+	border: 0.1875rem solid #000;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.custom-table th {
+	background-color: rgba(153, 153, 153, 0.9);
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+@media (max-width: 75rem) {
+	.brand-name {
+		font-size: 4.375rem;
+		margin-left: 3.125rem;
+		margin-top: 12.5rem;
+	}
+
+	.question-text {
+		font-size: 3.125rem;
+		margin-right: 3.125rem;
+	}
+
+	.container {
+		flex-direction: column;
+		margin-left: 1.25rem;
+		padding: 0.625rem;
+	}
+
+	.description-text {
+		font-size: 1.5rem;
+		margin-left: 1.25rem;
+	}
+
+	.image-links {
+		flex-direction: row;
+		gap: 0.625rem;
+	}
+}
+
+@media (max-width: 48rem) {
+	.brand-name {
+		font-size: 2.5rem;
+		text-align: center;
+		margin: 0;
+	}
+
+	.question-text {
+		font-size: 1.875rem;
+		text-align: center;
+		margin-right: 0;
+	}
+
+	.description-text {
+		font-size: 1.25rem;
+		text-align: center;
+		margin-left: 0;
+	}
+
+	.container {
+		flex-direction: column;
+		margin: 0;
+		padding: 0.625rem;
+	}
+
+	.container img {
+		width: 100%;
+		height: auto;
+		margin-bottom: 1.25rem;
+	}
+
+	.image-links {
+		flex-direction: column;
+		margin-top: 1.25rem;
+	}
+
+	.image-links img {
+		width: 2.5rem;
+		height: 2.5rem;
+	}
+
+	.custom-table th,
+	.custom-table td {
+		font-size: 0.875rem;
+	}
+
+	.extra-bold-text,
+	.extra-bold-text-white {
+		font-size: 3.125rem;
+	}
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: transparent;
+	padding: 0.5rem 1rem;
+	flex-wrap: wrap;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	gap: 1rem;
+	padding: 0;
+	margin: 0;
+}
+
+nav a {
+	font-size: 1rem;
+	color: white;
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+	border-radius: 5px;
+}
+nav a.active {
+	color: red;
+	font-weight: bold;
+	border-bottom: 2px solid red;
+}
+@media (max-width: 768px) {
+	nav ul {
+		flex-wrap: wrap;
+		gap: 0.5rem;
+	}
+	nav a {
+		font-size: 0.875rem;
+		padding: 0.4rem 0.8rem;
+	}
+}
+.projects-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	gap: 20px;
+	padding: 20px;
+}
+
+.project-card {
+	background-color: rgba(255, 255, 255, 0.9);
+	width: 300px;
+	padding: 15px;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+.project-card img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 4px;
+}
+
+.project-card h3 {
+	font-size: 1.2rem;
+	margin: 10px 0;
+}
+
+.project-card p {
+	font-size: 1rem;
+	color: #555;
+}
+.order-button {
+	display: inline-block;
+	background-color: #007bff;
+	color: white;
+	padding: 10px 20px;
+	margin-top: 15px;
+	font-size: 1rem;
+	text-decoration: none;
+	border-radius: 4px;
+	text-align: center;
+	width: 100%;
+}
+
+.order-button:hover {
+	background-color: #0056b3;
+}
+
+.order-button:active {
+	background-color: #004080;
+}
